@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+   
+    background-image:URL("/Images/pinkbg.jpg") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+   
+}
+
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    
+}
+
+
+.keyword {
+   position: relative;
+    background: rgb(113,13,69);
+background: linear-gradient(137deg, rgba(102, 9, 121, 0.575) 13%,
+  rgba(236, 5, 148, 0.544) 51%,
+   rgba(247, 77, 170, 0.471) 100%);
+    color: rgb(0, 0, 0);
+   
+    
+}
+
+.keyword:hover {
+    background: rgba(236, 17, 123, 0.3);
+}
+
+.keyword.selected {
+    background: rgb(88, 7, 86);
+   
+    background: linear-gradient(137deg, rgba(152, 0, 89, 0.841) 13%,
+      rgba(255, 113, 255, 0.708) 51%,
+       rgba(59, 0, 65, 0.673) 100%);
+    color: rgb(255, 254, 254);
+    font-weight: bold;
+    border: 2px  rgb(0, 0, 0);
+    border-style:dashed;
+    box-shadow: 0px 0px 10px rgb(9, 0, 0);
+}
+
+
+.error-message {
+    color: rgb(136, 2, 114);
+   
+}
+
+
+#proceed-btn {
+    background: rgb(248, 157, 225);
+    color: white;
+    
+}
+
+#proceed-btn.active {
+    background: #ff00a6;
+  
+}
+
+#proceed-btn.active:hover {
+    box-shadow: 0 0 10px rgba(51, 2, 21, 0.782);
+}
+
+
+/* RECOMANDATION */
+.card-content{
+
+    background: linear-gradient(137deg, rgba(255, 2, 166, 0.9) 13%,
+    rgba(191, 2, 100, 0.9) 35%, rgba(228, 99, 153, 0.9) 51%,
+    rgba(184, 25, 102, 0.9) 67%, rgba(66, 2, 24, 0.9) 100%);
+color: rgb(235, 190, 207);
+}
+.card{
+
+    background: linear-gradient(137deg, rgba(255, 2, 166, 0.9) 13%,
+    rgba(191, 2, 100, 0.9) 35%, rgba(251, 140, 186, 0.9) 51%,
+    rgba(184, 25, 102, 0.9) 67%, rgba(66, 2, 24, 0.9) 100%);
+color: rgb(235, 190, 207);
+    border-style: double;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.card:hover {
+    
+    box-shadow: 0px 10px 20px rgba(25, 23, 23, 0.753);
+}
+
+
+/* PROFILE*/
+
+#content div{
+    background-color: #ffffffc6;
+   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.507);
+    
+}
+.bar{
+    background-color: #510c39;
+}
+#profile{
+    background-color: #f961c3;
+}
+.button-div button{
+    background-color: #651046;
+    color:rgb(253, 166, 209);
+}
+.button-div button:hover{
+    color: #f961c3;
+    box-shadow: 0 0 15px rgba(221, 225, 225, 0.7);
+    background: linear-gradient(45deg, #e599bb, #d276c4, #962768, #ffffff);
+
+}
+.button-div button:checked{
+    color:#f961c3;
+}
+
+.button-div button a{
+    color: #ff00a6;
+}
+
+
+
+/* Nav bar */
+header{
+    background: rgb(82, 9, 65);
+    background: linear-gradient(90deg, rgb(31, 3, 17) 0%,
+    rgba(51, 4, 41, 0.9) 40%,
+     rgba(114, 15, 101, 0.8) 70%,
+      rgba(129, 9, 89, 0.449) 100%);
+        color: rgb(253, 253, 253);
+}
+nav ul li a {
+    color: rgb(0, 0, 0);
+  
+}
+a:hover{
+    color:rgb(254, 53, 200);
+    text-shadow: 0 0 4px #fefefe;
+}

@@ -1,0 +1,122 @@
+header {
+    top:0;
+    left:0;
+    width:100%;
+    height:3%;
+    position:fixed;
+    background: rgb(9,82,61);
+background: linear-gradient(90deg, rgb(3, 31, 22) 0%,
+rgba(4, 51, 45, 0.9) 40%,
+ rgba(15, 114, 93, 0.8) 70%,
+  rgba(9, 129, 109, 0.67) 100%);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    font-size: clamp(11px, 2vw, 20px);
+    z-index: 1000;
+}
+
+.logo {
+    position:relative;
+    margin: 0;
+    background-image: url('/Images/book-stack.png');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 35px 35px; 
+    padding-left: 50px;  
+    font-family:'Playfair Display', serif;
+    font-size: clamp(16px, 2vw, 30px);
+     word-wrap: break-word;
+}
+
+nav ul {
+    font-family: 'Merriweather', serif;
+    font-size: 120%;;
+    list-style: none;
+    justify-self: flex-end;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgb(91, 247, 182);
+    cursor: pointer;
+    text-shadow: 0 0 4px #07130f;
+}
+
+
+
+
+
+.theme-toggle {
+    position:fixed;
+    width: 70px;
+    height: 5%;
+    left:2%;
+    bottom:5%;
+    z-index: 100;
+}
+
+.toggle-label {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: URL("/Images/btn.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+
+    border-radius: 50px;
+    box-shadow: 3px 3px 10px #000000, -3px -3px 10px #ffffff;
+    display: flex;
+    align-items: center;
+   
+    padding: 5px;
+    transition: background 0.3s;
+}
+
+.circle {
+    position:relative;
+    width: 40%;
+    height: 30px;
+    margin: 2px;
+    background: linear-gradient(145deg, #44d882, #127344);
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px #bebebe, -2px -2px 10px #ffffff;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .toggle-label {
+    background-image: URL("/Images/2btn.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    box-shadow: 3px 3px 10px hsl(0, 0%, 100%), -3px -3px 10px #000000;
+
+
+}
+
+input[type="checkbox"]:checked + .toggle-label .circle {
+    transform: translateX(100%);
+    background: linear-gradient(145deg, #e3214e, #890632);
+    
+
+}

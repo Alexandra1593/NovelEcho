@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovelEcho</title>
+    <link rel="icon" type="image/x-icon" href="/Images/icon.png">
+    <link rel="stylesheet" href="splashstyle.css">
+       
+</head>
+<body>
+   
+
+    <div class="splash-screen" id="splashScreen">
+        <div class="name">
+            <h1 class="appName">Novel Echo</h1>
+            <p class="tagline">Discover the books that echo your soul.</p>
+
+        </div>
+       
+       
+      
+       <div class="loading">
+        <img src="/Images/Processing Circle.gif" width="100">
+       </div>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            document.getElementById("splashScreen").classList.add("hidden");
+        }, 3000); // After 3 seconds, splash screen fades out
+    </script>
+
+</body>
+</html>
