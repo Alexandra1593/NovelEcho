@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="icon" type="image/x-icon" href="/Images/icon.png">
+    <link rel="stylesheet" href="styleHome.css">
+    <link rel="stylesheet" href="navbarStyle.css">
+    <link id="themeStylesheet" rel="stylesheet" href="greenStyle.css">
+    <link rel="stylesheet" href="profileStyle.css">
+   
+</head>
+
+<body>
+    <header>
+        <h1 class="logo"> Novel Echo</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Login.html" id="login-btn">Logup</a></li>
+            </ul>
+        </nav>
+    </header>
+  
+      <div  id="page">
+
+        <div class="bar" id="hoverBar">
+            <p>PROFILE</p>
+               <div  class="container" id="profile">
+            <h3>PROFILE</h3>
+            <img src="">
+           <ul>
+            <li> Name </li>
+            <li>Surname</li>
+            <li>Nickname</li>
+            <li>E-mail</li>
+           </ul>
+            </div>
+      
+        </div>
+
+            <div   id="content">
+          
+            <div class="book-grid"  id="liked-books"> LIKED BOOKS</div>
+            <div class="book-grid" id="read-books">READ BOOKS</div>
+            <div class="button-div">
+                 <button id="read-progress" ><a href="#" onclick="showModal()"> Today pages</a></button>
+                 <button id="Reviews"><a href="#">Your reviews </a></button>
+                 <button id="challage"><a href="challange.html"> Book Chellange</a></button>
+            </div>
+         </div>
+          
+
+    </div>
+
+
+
+        <div class="theme-toggle">
+            <input type="checkbox" id="themeSwitch">
+            <label for="themeSwitch" class="toggle-label">
+                <div class="circle"></div>
+            </label>
+         </div>
+
+         <div id= "myModal"class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>How many pages did you read today?</h2>
+            <p>Mark it only once per day</p>
+            <input placeholder="Your pages"> </input>
+        
+        </div>
+        
+  
+   <script src="theme.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>

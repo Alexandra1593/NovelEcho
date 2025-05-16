@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovelEcho</title>
+    <link rel="icon" type="image/x-icon" href="/Images/sticky-note.png">
+    <link rel="stylesheet" href="styleHome.css">
+    <link rel="stylesheet" href="navbarStyle.css">
+    <link id="themeStylesheet" rel="stylesheet" href="greenStyle.css">
+    
+    
+
+</head>
+
+
+<body>
+    <header>
+        <h1 class="logo"> Novel Echo</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Login.html" id="login-btn">Logup</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Tell us about your Interests</h2>
+        <p>Select between <strong>3 and 6</strong> interests.</p>
+        <div class="keyword-grid">
+            <button class="keyword">Fantasy</button>
+            <button class="keyword">Science Fiction</button>
+            <button class="keyword">Mystery</button>
+            <button class="keyword">Romance</button>
+            <button class="keyword">Thriller</button>
+            <button class="keyword">Horror</button>
+            <button class="keyword">Historical</button>
+            <button class="keyword">Adventure</button>
+            <button class="keyword">Philosophy</button>
+            <button class="keyword">Tragic</button>
+            <button class="keyword">Biography</button>
+            <button class="keyword">Power</button>
+            <button class="keyword">Psychology</button>
+            <button class="keyword">Science</button>
+            <button class="keyword">Magic</button>
+            <button class="keyword">Love</button>
+            <button class="keyword">Legend</button>
+            <button class="keyword">Mythical creadures</button>
+            <button class="keyword">Destiny</button>
+            <button class="keyword">First Love</button>
+            <button class="keyword">Heartwarming</button>
+            <button class="keyword">Classic</button>
+           
+        </div>
+
+        <p id="error-message" class="error-message"></p>
+        <button id="proceed-btn" disabled>Search</button>
+    </div>
+
+
+
+    <div class="theme-toggle">
+        <input type="checkbox" id="themeSwitch">
+        <label for="themeSwitch" class="toggle-label">
+            <span class="circle"></span>
+        </label>
+        </div>
+   <script src="homeScript.js"></script>
+   <script src="theme.js"></script>  
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+</html>

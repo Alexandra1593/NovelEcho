@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovelEcho</title>
+    <link rel="icon" type="image/x-icon" href="/Images/icon.png">
+    <link rel="stylesheet" href="styleHome.css">
+    <link rel="stylesheet" href="navbarStyle.css">
+   
+    <link rel="stylesheet" href="loginStyle.css">
+    <link id="themeStylesheet" rel="stylesheet" href="greenStyle.css">
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+    <div id="splashContainer"></div>
+
+    <div  class="logo">
+        <h1> Novel Echo </h1>
+    </div>
+
+<div class="page" id="page">
+
+    <div class="button-container">
+           <img class= "sticker" src="Images/book-lover.png"> 
+        <ul>
+        <li> <button id="showSignIn">Sign In</button></li> 
+        <li><button id="showSignUp">Sign Up</button></li>
+        </ul>
+   
+    </div>
+    
+
+<div class="container" id="container">
+
+    <div class="form-container sign-in" id="signInDiv">
+        <form>
+            <ul>
+
+                <li> <h1>Sign In</h1> </li>
+                <li> <input type="email" id="E-mail" placeholder="E-mail" /> </li>
+                <li> <input type="password" id="Password" placeholder="Password" /> </li>
+                <br>
+                <li><a href="#" class="psw" onclick="showModal()">Forgot Your Password?</a> </li>
+                <li> <button class="submit">Sign In</button> </li>
+            </ul>
+           
+           
+        </form>
+    </div>
+    
+
+    <div class="form-container sign-up" id="signUpDiv">
+        <form>
+            <ul>
+
+             <li> <h1>Create Account</h1></li>   
+             <li><input type="text" id="Name" placeholder="Name" /></li> 
+             <li><input type="text" id="Surname" placeholder="Surname" /></li> 
+             <li><input type="text" id="Nickname" placeholder="Nickname" /></li> 
+             <li><input type="email" id="E-mail" placeholder="E-mail" /></li>
+             <li><input type="password" id="Password" placeholder="Password" /></li>
+             <li><button class="submit">Sign Up</button></li>
+            </ul>
+            
+        </form>
+       
+    </div>
+    
+  
+
+</div>
+<div id= "myModal"class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Please try again!</h2>
+    <p>I'm sorry for you!</p>
+
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="theme-toggle">
+    <input type="checkbox" id="themeSwitch">
+    <label for="themeSwitch" class="toggle-label">
+        <div class="circle"></div>
+    </label>
+ </div>
+
+
+
+<script src="script.js"></script>
+<script src="theme.js"></script>
+
+</body>
+</html>

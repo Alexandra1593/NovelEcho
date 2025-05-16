@@ -1,0 +1,76 @@
+#challange-container{
+   justify-content: center;
+    width:70%;
+    height: 70%;
+    display: flex;
+
+}
+
+#challanges{
+    position: relative;
+    width: 90%;
+    height:40%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    align-items: center;
+    font-family:'Times New Roman', Times, serif;
+}
+.block{
+    position: relative;
+    margin:2%;
+    width: 20%;
+    height: 40%;
+    background-color: rgb(233, 179, 179);
+    color:black;
+    border: solid black;
+    display: flex;
+    flex-direction:column;
+    text-wrap: wrap;
+    word-wrap:break-word;
+    border-radius: 10px;
+    font-family:'Times New Roman', Times, serif;
+   
+}
+
+input{
+    accent-color: rgb(39, 228, 115);
+    cursor:pointer;
+    top:40%;
+    align-self: end;
+    font-family: cursive;
+    position:absolute;
+}
+#text-input{
+    position:relative;
+    align-self: center;
+   
+
+}
+::placeholder{
+    color: rgb(0, 3, 2);
+    font-style: oblique;
+}
+
+
+.block:hover{
+    box-shadow: 0 0 15px rgba(221, 225, 225, 0.7);
+ background: linear-gradient(-45deg, #ffffff,  #444443, #ffffff);
+ background-size: 400% 400%;
+
+ animation: gradientAnimation 4s ease infinite;
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+   
+   }

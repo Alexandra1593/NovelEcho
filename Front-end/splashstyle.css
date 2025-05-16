@@ -1,0 +1,90 @@
+
+
+#splashScreen {  
+      
+    background-image: url("Images/backgr.jpg");
+   
+    left:0;
+    top:0;
+    z-index:3;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+   
+    display: flex;
+  
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: opacity 1s ease-out, visibility 1s ease-out;
+   
+}
+.splash-screen.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.name{
+    width:70%;
+    height:30%;
+   
+    position:fixed;
+    align-self: center;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    background-color: rgba(119, 223, 188, 0.167);
+   
+    border-radius: 2%;
+
+}
+.appName{
+     font-family:'Marck Script', cursive;
+    position: relative;
+    margin-bottom: 2%;
+    align-self: center;
+    color:rgb(10, 232, 252);
+    text-shadow: 2px 0 30px #041535;
+  
+
+}
+
+.tagline{
+    position: relative;
+    font-size:70%;
+    font-family: 'Monoton', cursive;
+    color:rgb(29, 112, 112);
+    text-shadow: 2px 0 0px #00ffee;
+}
+.loading{
+    position: absolute;
+    top:80%;
+   
+}
+
+
+.appName {
+    font-size: 4rem;
+    text-transform: uppercase;
+    animation: smokeEffect 1s ease-in forwards;
+}
+
+@keyframes smokeEffect {
+    0% {
+        opacity: 0;
+        filter: blur(90px);
+        transform: translateY(-50px);
+    }
+    50% {
+        opacity: 0.6;
+        filter: blur(10px);
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(0px);
+    }
+}

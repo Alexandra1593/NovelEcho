@@ -1,0 +1,156 @@
+body{
+    justify-content: space-between;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.name{
+    width:30%;
+    
+    height: auto;
+    position:fixed;
+    right:5%;
+    top:5%;
+    bottom:5%;
+    align-self: baseline;
+    justify-self:flex-end;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    
+}
+#sticker{
+   
+    position: absolute;
+    width:40%;
+    height: auto;
+    align-self:center;
+    bottom:0;
+    z-index: -1;
+}
+#sticker img{
+    width: 100%;
+}
+
+#artText{
+    font-family:cursive;
+    font-size:7vw;
+    background-image: url("Images/boooks.jpeg");
+    background-size:cover;
+    background-clip:text;
+        -webkit-background-clip: text;
+    color: transparent;
+
+
+}
+.container{
+    
+    position:relative;
+    box-shadow: 0px 0px 10px rgb(9, 0, 0);
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  
+   
+}
+#font{
+    position:relative;
+    display: flex;
+    max-height:70%;
+    max-width: 45%;
+    left: 5%;
+    text-wrap: wrap;
+    word-wrap:wrap;
+    font-size: clamp(16px, 2vw, 20px);
+   
+}
+#about{
+  
+   
+    position:relativea;
+    max-width: 40%;
+    max-height:70%;
+    display:flex;
+    right:5%;
+   
+    word-wrap:wrap;
+    align-self: last baseline;
+    bottom: 5%;;
+    padding-top:50px;
+    padding: 20px;
+    border-radius: 10px;
+   
+    box-shadow: 0px 0px 10px rgb(9, 0, 0);
+   
+   
+   
+}
+#about ul{
+    margin: 30px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.container li {
+    position: relative;
+    display: none; 
+    padding: 10px;
+    background-color:rgb(167, 166, 166);
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 3%;
+    
+}
+.container li:hover{
+ box-shadow: 0 0 15px rgba(221, 225, 225, 0.7);
+ background: linear-gradient(45deg, #ffffff, #cdc4b7, #444443, #ffffff);
+ background-size: 400% 400%;
+
+ animation: gradientAnimation 5s ease infinite;
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+   }
+   
+
+
+
+li.active {
+    display: block; 
+}
+
+.container a{
+
+    color:rgb(255, 255, 255);
+
+}
+.container a:hover{
+    color:rgb(255, 0, 0);
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;
+  }
+  

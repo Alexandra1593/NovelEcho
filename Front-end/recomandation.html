@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovelEcho</title>
+    <link rel="icon" type="image/x-icon" href="/Images/icon.png">
+    <link rel="stylesheet" href="styleHome.css"> 
+    <link rel="stylesheet" href="navbarStyle.css">
+    <link id="themeStylesheet" rel="stylesheet" href="greenStyle.css">
+   
+    <link rel="stylesheet" href="recomandation.css"> 
+   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <h1 class="logo"> Novel Echo</h1>
+        <nav>
+            <ul>
+            
+                <li><a href="home.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Login.html">Logup</a></li>
+                
+                </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Your Book Recommendations</h2>
+        <p>Based on your selected interests: <span id="selected-keywords"></span></p>
+        <div class="scroll-container">
+            <button class="scroll-btn sleft" onclick="scrollLeft()">&#10094;</button>
+        <div id="book-list" class="book-grid">
+           
+
+
+        </div>
+            <button class="scroll-btn right" onclick="scrollRight()">&#10095;</button>
+     
+
+        </div>
+    </div>
+
+
+    
+    <div class="theme-toggle">
+        <input type="checkbox" id="themeSwitch">
+        <label for="themeSwitch" class="toggle-label">
+            <div class="circle"></div>
+        </label>
+
+        <script src="theme.js"></script>
+  <script src="recomandation.js"></script>
+</body>
+</html>
